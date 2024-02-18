@@ -36,8 +36,7 @@ if __name__ == '__main__':
             max_dim = max(width, height, depth)             # pad to make it a square
             pad_width = [(0, max_dim - width), (0, max_dim - height), (0, max_dim - depth)]
             grid = np.pad(grid, pad_width, mode='constant', constant_values=0)
-            with open(grid_path.replace('.' + grid_extension, '.bin'), 'wb') as f:
-                f.write(grid.tobytes())
+            grid.tofile(grid_path.replace('.' + grid_extension, '.npy'))  # save as numpy array
 
             # for matplotlib visualization
             grid = np.swapaxes(grid, 1, 2)  # swap y and z

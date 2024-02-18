@@ -34,6 +34,10 @@ if __name__ == '__main__':
             for face_idx in range(num_faces):
                 faces[face_idx] = faces_data[face_idx*4:face_idx*4+3]
 
+            # save numpy arrays
+            vertices.tofile(mesh_path.replace('.' + mesh_extension, '_vertices.npy'))
+            faces.tofile(mesh_path.replace('.' + mesh_extension, '_faces.npy'))
+
             # modify mesh for visualization
             for vertex_idx in range(num_vertices):
                 # swap y and z

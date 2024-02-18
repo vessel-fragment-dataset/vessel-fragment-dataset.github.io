@@ -25,7 +25,6 @@ int main(int argc, char** argv)
 	// Read binary file into stringstream
 	for (const std::string& file : files)
 	{
-		// read not binary file
 		std::ifstream input(file, std::ios::in | std::ios::binary);
 		std::stringstream buffer;
 		buffer << input.rdbuf();
@@ -50,7 +49,7 @@ int main(int argc, char** argv)
 
 		// Write to ply
 		std::string ply = file.substr(0, file.size() - 5) + ".ply";
-		pcl::io::savePLYFile(ply, *cloud);
+		pcl::io::savePLYFileBinary(ply, *cloud);
 	}
 
 	return 0;
