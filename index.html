@@ -45,7 +45,7 @@
                     Framework for generating datasets aimed at fracture ensembling
                 </h2>
                 <h4><i>Spanish Computer Graphics Conference (CEIG 24)</i></h4>
-                <p>
+                <!--<p>
                     <a href="https://alfonsolrz.github.io">Alfonso López-Ruiz</a><sup>1,*</sup>
                         <a href="https://orcid.org/0000-0003-1423-9496">
                             <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />
@@ -81,9 +81,9 @@
                     <sup>2</sup>Instituto Patagónico de Ciencias Sociales y Humanas. Centro Nacional Patagónico, CONICET, Puerto Madryn, Argentina&nbsp;&nbsp;
                 </p>
                     <sup>*</sup> Equal contribution
-                </p>
+                </p>-->
                 <h5>
-                    <a href="https://arxiv.org/abs/2210.11463">[Paper]</a>&nbsp;
+                    <!--<a href="https://arxiv.org/abs/2210.11463">[Paper]</a>&nbsp;-->
                     <a href="https://s5-ceatic.ujaen.es/fragment-dataset-uja/">[Data]</a>&nbsp;
 <!--                     <a href="https://github.com/Wuziyi616/multi_part_assembly">[Benchmark Code]</a>&nbsp; -->
 <!--                     <a href="https://github.com/sgsellan/fracture-modes#dataset">[Data Generation Code]</a> -->
@@ -108,12 +108,12 @@
                 <p>
                     Our fragment dataset was generated with <b>1,052 Iberian vessels</b>, by fragmenting
                     every mesh between 2 and 10 times. The number of iterations for every number of fragments
-                    was linearly interpolated in [25, 15], hence generating 2 x 25 fragments. 
+                    was linearly interpolated in [25, 15], hence generating 25 fragments while breaking models into 2 pieces. 
                     The fragmentation was stopped for every mesh once 1k fragments were obtained. 
                     A total of <b>1,040,428</b> point clouds and triangle meshes have been released together with <b>187,257</b> voxelizations.
                     From these, 1,052 are dedicated to storing the original mesh. Triangle meshes are saved in their 
                     original format, as obtained from marching cubes, point clouds were sampled with 1024 points, and voxelizations 
-                    have a resolution of 128<sup>3</sup>.
+                    have a resolution of up to 128<sup>3</sup>.
                 </p>
             </div>
             <div class="container_img">
@@ -236,7 +236,7 @@
                 <div align="center"><h3>Accessing the dataset</h3></div>
                 <p>
                     The dataset has been released in <a href="https://s5-ceatic.ujaen.es/fragment-dataset-uja/">our research centre page</a>. It was split into multiple files
-                    since the whole zip was about 450 GB. A lighter version, with 200 fragmented vessels and no individual file zipping has also been provided.
+                    since the whole zip was about <b>450 GB</b>. A lighter version, with 200 fragmented vessels and no individual file zipping has also been provided with .obj and .ply file formats (<b>27 GB</b>).
                 </p>
                 <br/>
 
@@ -254,7 +254,8 @@
 
                 <div align="center"><h3>Vessel classification</h3></div>
                 <p>
-                    Our dataset is supplied as a single file, but the root name of files determine the vessel classification, as detailed in a previous work of ours []. 
+                    Our dataset is supplied as a single file, but the root name of files determine the vessel classification, as detailed in a previous work of ours<!--[<a href="https://www.sciencedirect.com/science/article/pii/S1296207421000042">Navarro et al., 2022</a>,
+                    <a href="https://link.springer.com/article/10.1007/s11042-016-4076-9">Lucena et al., 2017</a>]-->. 
                     This a yet unexplored branch since archaeological artefacts are hardly found intact; indeed, it is rather common to find small fragments. All these 
                     factors harden their digitization, and therefore, any application operating over 3D archaeological artefacts is hard to reproduce in the real-world. 
                     Yet, we provide <i>class_vessel.csv</i> for any future work that may find helpful this vessel categorization.
@@ -269,9 +270,9 @@
                     </p>
                     <p align="center">
                         <i>
-                            Eleven vessel profiles, as annotated in the provided <i>class_vessel.csv</i> file 
-                            [<a href="https://www.sciencedirect.com/science/article/pii/S1296207421000042">Navarro et al., 2022</a>,
-                             <a href="https://link.springer.com/article/10.1007/s11042-016-4076-9">Lucena et al., 2017</a>].
+                            Eleven vessel profiles, as annotated in the provided <i>class_vessel.csv</i> file
+                            <!--[<a href="https://www.sciencedirect.com/science/article/pii/S1296207421000042">Navarro et al., 2022</a>,
+                             <a href="https://link.springer.com/article/10.1007/s11042-016-4076-9">Lucena et al., 2017</a>].-->
                         </i>
                     </p>
                 </div>
