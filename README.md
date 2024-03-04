@@ -14,11 +14,13 @@ Otherwise, please go to `decompress` folder to learn how to decompress binary fi
     <img src="data/body/decompress_binaries.png">
 </p>
 
-<!--## Training
+## Training
 
-To compare the performance of popular fracture assembly networks, we used the baseline code of <a href="https://github.com/Wuziyi616/multi_part_assembly/">Sellán et al. (2022)</a>. It provides DGL-Net, RGL-Net as well as a simple LSTM architecture. We tested our dataset using their artifact dataset, which is the most similar to ours (comes from scanned items), and our light dataset (200 vessels). Although the used networks are far from being perfect, there were some remarkable results such as the one in the following figure.
+To compare the performance of popular fracture assembly networks over our fragments, we used the baseline project of <a href="https://github.com/Wuziyi616/multi_part_assembly/">Sellán et al. (2023)</a>. It provides DGL-Net, RGL-Net as well as a simple LSTM architecture. We compared our dataset against their artifact dataset, which is the most similar to ours (obtained from real-world scanned items), and the lighter version of our dataset (200 artefacts x 1000 fragments). Although the mentioned networks were proved to be far from exceptional results, similar values were obtained when evaluating both datasets in terms of Chamfer distance, Mean Absolute Error (MAE), Mean Root Squared Error (RMSE) and part accuracy (PA). 
+
+The following image depicts a sample of assembled pieces after being processed by the network. In the middle, the initial pieces centred at (0, 0, 0) and randomly rotated; on the left side, the expected assembly.
 
 <p>
     <img src="data/readme/assembled_pieces.png" width="60%">
-</p>-->
+</p>
 
