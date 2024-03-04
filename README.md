@@ -20,7 +20,7 @@ To compare the performance of popular fracture assembly networks over our fragme
 
 The following image depicts a sample of assembled pieces after being processed by the network. In the middle, the initial pieces centred at (0, 0, 0) and randomly rotated; on the left side, the expected assembly.
 
-<p>
-    <img src="data/readme/assembled_pieces.png" width="60%">
+<p align="center"> 
+    <img src="data/readme/assembled_pieces.png" width="80%">
 </p>
 
